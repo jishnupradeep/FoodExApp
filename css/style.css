@@ -11,107 +11,156 @@ body {
 #screen {
 	height: 530px;
 	width: 300px;
-	margin: 105px 23px;
+	margin: 105px 30px;
+}
+
+.h5 {
+	color: white;
+	padding-top: 9px;
+	font-size: 19px;
+	display: block;
+	font-weight: bold;
+	align-items: center;
+	width: 240px;
+	padding-left: 62px;
+	position: absolute;
 }
 
 .head-bar {
-	
+	background-color: #FF8C00;
+	width: 300px;
+	height: 45px;
+	text-align: center;
+	display: inline-block;
 }
 
 .back-button {
-	
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin-left: 5px;
+	float: left;
+	padding-top: 7px;
 }
 
-/* 
-	Albums 
-			*/
-.albums-album-wrapper {
-	f
+.profile-dots{
+	float: right;
+	width: 10px;
+	height: 10px;
+	padding-top: 9px;
+	padding-right: 25px;
 }
 
-.albums-album-art {
-	
+.confirmation{
+	margin: 25px 20px 0px 20px;
+	border-style: solid;
+	height: 260px;
+	width: 260px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px grey;
+	align-items: center;
+	background-color: white;
 }
 
-.albums-album-name {
+.tick{
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+	font-size:50px;
+	color:green;
+}
+
+.msg{
+	text-align: center;
+	font-weight: bold;
+}
+
+.bookingid{
+	margin: 25px 20px 0px 20px;
+	border-style: solid;
+	height: 80px;
+	width: 260px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px grey;
+	align-items: center;
+	background-color: white;
+}
+
+.bookingid img{
+	align-items: center;
+	background-color: white;
+	margin-top: 8px; 
+	margin-left: 10px;
+	margin-bottom: 0px;
+	display: inline-block;
+}
+
+.buttons1{
+	margin-top: 22px; 
+	margin-left: 5px; 
+	height: 20px;
+	text-align: center; 
+	font-size: 11px;
+	display: inline-block;
+	float: left;
+}
+
+.buttons2{
+	margin-top: 22px; 
+	margin-left: 2px; 
+	height: 20px;
+	width: 20px;
+	text-align: center; 
+	font-size: 11px;
+	display: inline-block;
+}
+
+.buttons3{
+	margin-top: 22px; 
+	margin-left: 7px; 
+	margin-right: 5px;
+	height: 20px;
+	text-align: center; 
+	font-size: 11px;
+	display: inline-block;
+	float: right;
+}
+
+.idnumber{
+	margin-left: 30px;
+	line-height: 20px;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+}
+
+.idnumber p{
+	font-size: 13px;
+	height: 60px;
+	width: 90px;
+	line-height: 10px;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+}
+
+.idnumber h2{
+	font-size: 18px;
+	height: 60px;
+	width: 90px;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+}
+
+.pickuptimer{
+	text-align: center;
+	font-weight: bold;
+	font-size: 27px;
+	width: 185px;
+	height: 35px;
+	margin-left: 40px;
+	box-shadow: 1px 1px 1px grey;
 
 }
 
-.albums-artist-name {
-
-}
-
-/* 
-	Songs 
-			*/
-.songs-info-wrapper {
-	
-}
-
-.songs-album-art {
-	
-}
-
-.songs-album-name {
-	
-
-}
-
-.songs-artist-name {
-	
-}
-
-.songs-text-info {
-	
-}
-
-.songs-album-year {
-	
-}
-
-.songs-list {
-	
-}
-
-/* 
-	Player 
-			*/
-.player-album-art {
-	
-}
-
-.player-song-info {
-	
-}
-
-#player-song-name {
-	
-}
-
-.volume-bar {
-	
-}
-
-.volume-level {
-	
-}
-
-.volume-rocker {
-	
-}
-
-.player-controls{
-	
-}
-
-#player-time {
-	
-}
-
-#time-elapsed {
-	
-}
-
-#time-total{
-	
-}
