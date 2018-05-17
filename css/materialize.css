@@ -6837,6 +6837,7 @@ textarea.materialize-textarea {
   height: 25px;
   line-height: 25px;
   font-size: 1rem;
+  color: #0091ea;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -6852,7 +6853,7 @@ textarea.materialize-textarea {
   width: 18px;
   height: 18px;
   z-index: 0;
-  border: 2px solid #5a5a5a;
+  border: 2px solid #f50000;
   border-radius: 1px;
   margin-top: 3px;
   -webkit-transition: .2s;
