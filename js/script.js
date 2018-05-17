@@ -12,7 +12,10 @@ function countdown(){
         
         // Find the distance between now an the count down date
         //var distance = countDownDate - now;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
         
         // Time calculations for hours, minutes and seconds
         //var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -20,10 +23,17 @@ function countdown(){
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
         // Output the result in an element with id="demo"
+<<<<<<< HEAD
         //document.getElementById("demo").innerHTML = hours + "h : " + minutes + "m : " + seconds + "s ";
         document.getElementById("demo").innerHTML = minutes + "m : " + seconds + "s ";
         distance = distance - 1000;
 
+=======
+       // document.getElementById("demo").innerHTML = hours + "h : " + minutes + "m : " + seconds + "s ";
+        document.getElementById("demo").innerHTML = minutes + "m : " + seconds + "s ";
+
+        distance = distance - 1000;
+>>>>>>> origin/master
         
         // If the count down is over, write some text 
         //if (distance < 0) {
