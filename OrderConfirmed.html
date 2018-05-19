@@ -11,8 +11,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </header>
 
-<body onload="countdown()"><!--the timer starts when the page loads-->
-      <div id="screen">
+<body onload="confirmation(), countdown()"><!--the timer starts when the page loads-->
+      <div id="screen" style="background-color:rgb(245, 245, 245)">
       	<div class="head-bar">
             <a href="listings.html">
             <div class="h5">Confirmation</div>
@@ -27,7 +27,7 @@
                <a href="">
                   <img src="assets/images/dots.png" alt="profiledots" height="25" width="25" />
                   </a>
-            </div><!--end of profile dots-->  
+            </div><!--end of profile dots-->
 
       	</div><!--end of head-bar-->
 
@@ -37,7 +37,7 @@
             </div><!--end of tick-->
 
             <div class="msg">
-               <p>Thank you!</p>               
+               <p>Thank you!</p>
             </div>
             <div class="msg">
                <p>Please pick up your order in</p>
@@ -50,11 +50,11 @@
          </div><!--end of confirmation-->
 
          <div class="bookingid">
-            <img src="assets/images/QR_code.png" alt="qrcode" height="60" width="60"/>
+            <div id="qrcode" style="margin-left: 15px; width:10px; height:10px; margin-top:15px;"></div>
             <div class="idnumber">
                <p>Reservation ID</p>
-               <h2>22052018</h2>  
-            </div><!--end of idnumber-->     
+               <h2 id="conf_code"></h2>
+            </div><!--end of idnumber-->
          </div><!--end of bookingid-->
 
          <div class="buttons1">
@@ -64,16 +64,19 @@
             <a class="waves-effect orange darken-1 btn-small">Location</a>
           </div>
          <div class="buttons3">
-             <a class="waves-effect orange darken-1 btn-small">Contact</a>     
+             <a class="waves-effect orange darken-1 btn-small">Contact</a>
          </div><!--end of buttons-->
-         
+
       </div><!--end of screen-->
 
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/qrcode.js"></script>
+      <script type="text/javascript" src="js/qrcode.min.js"></script>
    </body>
 </html>
-<!-- 
+<!--
 * bg iphone img is 363x762px
 * iphone 'screen' is apprx 300x530 -->
