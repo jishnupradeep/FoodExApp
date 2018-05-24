@@ -1,0 +1,111 @@
+<html>
+<header>
+   <title>FoodEx</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import materialize.css-->
+   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+   <!--Let browser know website is optimized for mobile-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</header>
+
+<body><!--the timer starts when the page loads-->
+      <div id="screen" style="background-color:rgb(245, 245, 245)">
+        <div class="head-bar">
+            <a href="listings.html">
+            <div class="h5">Add Listing</div>
+            <!--end of text-->
+
+            <div class="back-button">
+                  <img src="assets/images/backarrow.png" alt="backbutton" height="30" width="30" />
+                  </a>
+            </div><!--end of back button-->
+
+            <div class="profile-dots">
+               <a href="">
+                  <img src="assets/images/dots.png" alt="profiledots" height="25" width="25" />
+                  </a>
+            </div><!--end of profile dots-->
+
+        </div><!--end of head-bar-->
+
+        <div id = "container" style = "width:100%">
+            <div class="listing listing-2" style="margin-top: 14px; height: 450px;">
+            <div class="input-field" style="width:250px; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:0px">
+                        <input id="listing_name" type="text" class="validate">
+                        <label for="listing_name">Listing Name</label>
+            </div>
+
+            <div class="row" style="margin-bottom: 0px;width: 300px ">
+                        <div class="col">
+                          <ul class="tabs">
+                            <li class="tab"><a href="#test1">Veg</a></li>
+                            <li class="tab"><a href="#test2">Non-Veg</a></li>
+                            <li class="tab"><a href="#test3">Vegan</a></li>
+                          </ul>
+                        </div>
+            </div>
+
+            <div class="input-field" style="width:250px; margin-left:20px; margin-right:20px; margin-top:15px; margin-bottom:0px">
+                        <input id="servings" type="number" class="validate" min="1">
+                        <label for="servings">Servings Available</label>
+            </div>
+
+            <div class="input-field" style="width:250px; margin-left:20px; margin-right:20px; margin-top:10px; margin-bottom:0px">
+                        <input type="text" class="timepicker">
+                        <label for="open">Available Until</label>
+            </div>
+
+            <div class="input-field" style="width:250px; margin-left:20px; margin-right:20px; margin-top:10px; margin-bottom:0px">
+                        <input id="price" type="number" class="validate" step="0.1" min="0">
+                        <label for="price">Price</label>
+            </div>
+
+            <form action="#">
+                  <div class="container">
+
+                        <p style="float: left; margin-left: -10px">
+                        <label>
+                        <input type="checkbox" />
+                        <span>Delivery</span>
+                        </label>
+                        </p>
+            
+                        <p style="float: left; margin-left: 35px">
+                        <label>
+                        <input type="checkbox" />
+                        <span>Pick-up</span>
+                        </label>
+                        </p>
+                  </div>
+            </form>
+
+            <a href="OrderConfirmed.html"><button style="margin-left:80px; margin-top:10px;  color: rgb(255, 255, 255); border-radius: 20px; font-weight: bold" class="btn waves-effect #fb8c00 orange darken-1" type="submit" name="action">Add Listing
+
+
+
+
+
+
+
+             </div><!--end of listingform-->
+
+            </div><!--end of screen-->
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script>  document.addEventListener('DOMContentLoaded', function() {
+                  var elems = document.querySelectorAll('.timepicker');
+                  var instances = M.Timepicker.init(elems, options);
+                });</script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/qrcode.js"></script>
+      <script type="text/javascript" src="js/qrcode.min.js"></script>
+   </body>
+</html>
+<!--
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->
