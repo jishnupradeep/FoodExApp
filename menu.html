@@ -1,0 +1,99 @@
+<html>
+<header>
+   <title>FoodEx</title>
+   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import materialize.css-->
+   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!--Let browser know website is optimized for mobile-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+
+
+
+
+</header>
+
+<body>
+      <div id="screen" style="background-color:rgb(245, 245, 245);">
+
+           
+            <div class="vertical-menu">
+              <a href="javascript:history.back()" class="active" style="text-align: center; font-size: 20px; font-weight: bold;">Menu<i class="fa fa-times" style="font-size:30px;color:rgb(255, 255, 255); margin: 0px 0px 0px 65px;"></i></a>
+              <a href="listings.html"><i class="fa fa-list" style="font-size:15px;color:#FF8C00;margin-right: 10px"></i>All Listings</a>
+              <a href="MyListings.html"><i class="fa fa-paper-plane-o" style="font-size:15px;color:#FF8C00;margin-right: 10px"></i>Listings by Me</a>
+              <a href="#"><i class="fa fa-lemon-o" style="font-size:15px;color:#FF8C00;margin-right: 13px"></i>My Orders</a>
+              <br>
+              <hr>
+
+              <a href="UserProfile.html"><i class="fa fa-user" style="font-size:15px;color:#FF8C00;margin-right: 13px"></i>My Profile</a>
+              <a href="index.html"><i class="fa fa-sign-out" style="font-size:15px;color:#FF8C00;margin-right: 10px"></i>Sign Out</a>
+            </div>
+            
+         
+      </div>
+
+     
+      <!--JavaScript at end of body for optimized loading-->
+
+
+
+
+
+      <script>
+                  function myMap() {
+                    var mapCanvas = document.getElementById("map");
+                    var mapOptions = {
+                      center: new google.maps.LatLng(42.048119, -87.681770), zoom: 16
+                    };
+                    var pin = new Image();
+                    pin.src = '/assets/images/foodmarker.png';
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+                    marker = new google.maps.Marker({
+    map: map,
+    draggable: true,
+    animation: google.maps.Animation.DROP,
+    icon: pin,
+    position: {lat: 42.048119, lng: -87.681770}
+  });
+                   
+
+  marker = new google.maps.Marker({
+    map: map,
+    draggable: true,
+    animation: google.maps.Animation.DROP,
+    icon: pin,
+    position: {lat: 42.047947, lng: -87.681179}
+  });
+
+  
+
+
+
+
+  marker.addListener('click', toggleBounce);
+                  }
+
+                  function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+                  </script>
+
+                
+
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKMAxyDKZVfJd40jSDKfN8nW_RZqvVbUw&callback=myMap"></script>
+   </body>
+</html>
+<!-- 
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->
