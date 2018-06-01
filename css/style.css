@@ -287,4 +287,29 @@ body {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+	display: block;}
+	
+
+.vertical-menu {
+	width: 200px;
+	height: 530px;
+	background-color: #eee;
+
+}
+
+.vertical-menu a {
+	background-color: #eee;
+	color: black;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+}
+
+.vertical-menu a:hover {
+	background-color: #ccc;
+}
+
+.vertical-menu a.active {
+	background-color: #FF8C00;
+	color: white;
+}

@@ -7,8 +7,15 @@
    <!--Import materialize.css-->
    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
    <!--Let browser know website is optimized for mobile-->
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+
+
+
+
 </header>
 
 <body>
@@ -18,7 +25,7 @@
             <!--end of text-->
            
             <div class="profile-dots" >
-                 <a href="#" data-target="dropdown1"> <img src="assets/images/dots.png" alt="profiledots" height="25" width="25" /> </a>
+                 <a href="menu.html"> <img src="assets/images/dots.png" alt="profiledots" height="25" width="25" /> </a>
                  
 
             </div><!--end of profile dots-->           
@@ -75,27 +82,17 @@
          </a>
 
          <a href="AddListing.html" class="btn-floating btn-large waves-effect orange darken-1" style="margin-left: 230px; margin-top: 7px;"><i class="material-icons">add</i></a>
-
-
         
 
       </div>
 
-      <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div> 
-      </div>
+     
       <!--JavaScript at end of body for optimized loading-->
+
+
+
+
+
       <script>
                   function myMap() {
                     var mapCanvas = document.getElementById("map");
@@ -112,6 +109,8 @@
     icon: pin,
     position: {lat: 42.048119, lng: -87.681770}
   });
+                   
+
   marker = new google.maps.Marker({
     map: map,
     draggable: true,
@@ -119,6 +118,9 @@
     icon: pin,
     position: {lat: 42.047947, lng: -87.681179}
   });
+
+  
+
 
 
 
