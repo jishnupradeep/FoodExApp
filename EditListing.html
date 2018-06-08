@@ -9,6 +9,37 @@
    <!--Let browser know website is optimized for mobile-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+   <style>
+    input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    }
+    
+    label {
+    color: #9a929e;
+    display: inline-block;
+    cursor: pointer;
+    }
+    
+    input[type=radio]:checked + label {
+    color: #FF8C00;
+    background: #e2e2e2;
+    }
+    
+    label + input[type=radio] + label {
+    border-left: solid 2px #b1afb3;
+    }
+    
+    .radio-group {
+    border: solid 2px #b1afb3;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    }</style>
+
 </header>
 
 <body><!--the timer starts when the page loads-->
@@ -42,19 +73,11 @@
                         <label class="active" for="listing_name">Listing Name</label>
             </div>
 
-
-           
-
-
-            <div class="row" style="margin-bottom: 0px;width: 300px ">
-                        <div class="col">
-                          <ul class="tabs">
-                            <li class="tab"><a href="#test1">Veg</a></li>
-                            <li class="tab"><a href="#test2">Non-Veg</a></li>
-                            <li class="tab"><a href="#test3">Vegan</a></li>
-                          </ul>
-                        </div>
-            </div>
+            <form>
+              <div class="radio-group" style="margin-left: 29px; margin-bottom: 5px">
+             <input type="radio" id="option-one" name="selector"><label style="	padding: 5px 20px;" for="option-one">Veg</label><input type="radio" checked="checked" id="option-two" name="selector"><label style="padding: 5px 20px;" for="option-two">Non.Veg</label><input type="radio" id="option-three" name="selector"><label style="	padding: 5px 20px;" for="option-three">Vegan</label>
+               </div>
+                </form>
 
             <div class="input-field" style="width:250px; margin-left:20px; margin-right:20px; margin-top:15px; margin-bottom:0px">
                         <input value="4" id="servings" type="number" class="validate" min="1">
@@ -103,27 +126,7 @@
             </div><!--end of screen-->
 
       <!--JavaScript at end of body for optimized loading-->
-      <script>  document.addEventListener('DOMContentLoaded', function() {
-                  var elems = document.querySelectorAll('.timepicker');
-                  var instances = M.Timepicker.init(elems, options);
-                });
-
-                document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
-
-  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
-  // var collapsibleElem = document.querySelector('.collapsible');
-  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-        
-        </script>
+  
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
       <script type="text/javascript" src="js/jquery.min.js"></script>

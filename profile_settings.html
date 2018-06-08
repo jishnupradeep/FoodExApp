@@ -28,42 +28,49 @@
                   <p style="color: white; font-size: 12px; margin-top: -20px">Evanston, IL</p>
                   
                   <div class="container" style="float: left; height: 20px; width: 50px; margin-top: 27px; margin-left: 20px">
-                  <p style="color: white; font-size: 15px; margin: 0 0 0 0; padding-left:10px; font-weight: bold;">Profile</p>
-                  <hr style="width: 66px; margin-top: 1px; border-color:white;  border: 1px solid white;">
+                  <a href="UserProfile.html"><p style="color: white; font-size: 15px; margin: 0 0 0 0; padding-left:10px;">Profile</p></a>
+                  <hr style="width: 66px; margin-top: 1px; border-color:white;  border: 1px solid white; margin-left: 185px">
                   </div>
 
           
 
                   <div class="container" style="height: 20px; width: 60px; margin: 27px 130px 0px 0px; float:right;">
-                    <a href="profile_savings.html"><p style="color: white; font-size: 15px; margin: 0 -10 0 0; ">Savings</p></a>
-                    <a href="profile_settings.html"><p style="color: white; font-size: 15px; margin: -22px -195px 0 0; ">Settings</p></a>
+                   <a href="profile_savings.html"> <p style="color: white; font-size: 15px; margin: 0 -10 0 0; ">Savings</p></a>
+                    <p style="color: white; font-size: 15px; margin: -22px -195px 0 0; font-weight: bold; ">Settings</p>
 
 
                   </div>
 
 
               
-                    <div class="centered" style="width: 280px; height: 230px; background-color: white; border-radius: 5px;  margin-top: 80px;   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
+                    <div class="centered" style="width: 280px; height: 180px; background-color: white; border-radius: 5px;  margin-top: 80px;   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);">
                     
                         <div style="margin-top:25px" class="row">
 
-                          <!--First Name-->
-                          <div>
-                                <p style="color: black;">Address : 1584 Oak Ave</p>
-                                <p style="color: black;">Phone : 952-465-6366</p>
-                                <p style="color: black;">Email : john.doe@gmail.com</p>
-                                <p style="color: black;">Password : S********4</p>
-                          </div>
+                            <div style="width: 160px; text-align: center;margin-left: 60px;margin-top: 10px ">
+                                <select onchange="myFunction()" id="quantity" class="browser-default" style="height: 25px; font-size: 12px">
+                                  <option value="0" disabled selected>Select Startup Screen</option>
+                                  <option value="1">All Listings</option>
+                                  <option value="2">Listings by me</option>
+                                  <option value="3">My Orders</option>
+                                </select>
+                            </div>
 
-                          <a href="EditProfile.html"><button style="margin-left:0px; margin-top:4px; color: rgb(255, 255, 255); border-radius: 20px; font-weight: bold" class="btn waves-effect #fb8c00 orange darken-1" type="submit" name="action"> <i class="fa fa-pencil" aria-hidden="true" style="font-size:15px;color:white; float: right; margin: 0px 0px 0px 5px"></i>
-                            Edit
+                            <a href="#"><p style="color: black"> Payment Settings</p></a>
+
+                            <a href="UserProfile.html"><button style="margin-left:0px; margin-top:20px; color: rgb(255, 255, 255); border-radius: 20px; font-weight: bold" class="btn waves-effect #fb8c00 orange darken-1" type="submit" name="action"> Save</button>
+
 
 
                       </div><!--End of centered-->
               </div><!-- End of container-->       
           </div><!--End of head bar-->
         </div><!--End of screen-->
-
+        <script> document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, options);
+          });
+</script>
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>

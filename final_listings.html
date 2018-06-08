@@ -12,16 +12,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 
+
+
+
+
 </header>
 
 <body>
-
-
       <div id="screen" style="background-color:#f5f5f5;">
-          
-       
-
-
       	<div class="head-bar">
             <div class="h5" style="position: absolute;">Listings</div>
             <!--end of text-->
@@ -83,9 +81,25 @@
             </div>
          </a>
 
+         <a href="confirm_chicken.html">
+          <div id = "container" style = "width:100%">
+          <div class="listing listing-1" style="margin-top: 10px">
+          <img src="assets/images/Chicken-Tikka-Masala.jpg" alt="images" style="float:left; width: 55px; height: 55px; border-radius: 50%;margin-left: 8px; margin-top: 9px; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);;">
+          <p style="float:left; font-size: 12px; margin: 0px; color: rgb(71, 71, 71); font-weight: bold; margin-left: 10px; margin-top: 10px">Chicken Tikka Masala</p>
+          <p style="float:right; font-size: 14px; margin: 0px; color: rgb(71, 71, 71); font-weight: bold; margin-right: 10px; margin-top: 10px">$0.00</p>
+          <br><br>
+          <p style="float:left; font-size: 11px; margin: 0px; color: rgb(71, 71, 71); margin-left: 10px; margin-top: -18px">Khana Khazana</p>
+          <p style="float:left; font-size: 11px; margin: 0px; color: rgb(71, 71, 71); margin-left: 10px; margin-top: 8px">Available: <strong>4</strong></p>
+          <i class="fa fa-clock-o" aria-hidden="true" style="float: center; margin-top: 9px; margin-left: 25px; font-size: 12px; color: #FF8C00" ></i>
+          <p style="float:right; font-size: 11px; margin: 0px; color: rgb(71, 71, 71); margin-left: 2px; margin-right: 9px; margin-top: 8px">Open Until: <strong>11:45 PM</strong></p>
+          </div>
+          </div>
+       </a>
+
          
 
-         <a href="AddListing.html" class="btn-floating btn-large waves-effect orange darken-1" style="margin-left: 230px; margin-top: 33px;"><i class="material-icons">add</i></a>
+        
+
       </div>
 
      
@@ -99,34 +113,32 @@
                   function myMap() {
                     var mapCanvas = document.getElementById("map");
                     var mapOptions = {
-                      center: new google.maps.LatLng(42.048119, -87.681770), zoom: 16.2
+                      center: new google.maps.LatLng(42.048119, -87.681770), zoom: 15.6
                     };
                     var pin = new Image();
-                    var map = new google.maps.Map(mapCanvas, mapOptions);
                     var icon = {
     url: "assets/images/foodmarker.png", // url
     scaledSize: new google.maps.Size(50, 50), // scaled size
     origin: new google.maps.Point(0,0), // origin
-    anchor: new google.maps.Point(20, 20) // anchor
+    anchor: new google.maps.Point(20,40) // anchor
 };
-                    
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+
   marker = new google.maps.Marker({
     map: map,
-    labelAnchor: new google.maps.Point(15, 65),
-    labelClass: "labels", // the CSS class for the label
-    labelInBackground: false,
+    draggable: true,
     animation: google.maps.Animation.DROP,
     icon: icon,
     position: {lat: 42.048119, lng: -87.681770}
   });
-
-   var iw1 = new google.maps.InfoWindow({
+          
+  var iw1 = new google.maps.InfoWindow({
         content: "#1 Pizza Slices"
     });
     google.maps.event.addListener(marker, "click", function (e) {
         iw1.open(map, this);
     });
-                   
+
 
   marker = new google.maps.Marker({
     map: map,
@@ -143,23 +155,32 @@
         iw.open(map, this);
     });
 
+   marker = new google.maps.Marker({
+    map: map,
+    draggable: true,
+    animation: google.maps.Animation.DROP,
+    icon: icon,
+    position: {lat: 42.047517, lng: -87.685282}
+  });
 
-google.maps.event.addDomListener(window, 'load', initMap);
+   var iw2 = new google.maps.InfoWindow({
+        content: "#3 Chicken Tikka Masala"
+    });
+    google.maps.event.addListener(marker, "click", function (e) {
+        iw2.open(map, this);
+    });
+
+  
+
+
+
+
+  marker.addListener('click', toggleBounce);
                   }
 
-     
                   </script>
 
                 
-<script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "25px";
-    }
-    
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-</script>
 
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
