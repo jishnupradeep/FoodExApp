@@ -1,5 +1,5 @@
 # FoodEx App - UI Design
-> An app to end food wastage
+> 🍛An app to end food wastage
 
 FoodEx is a mobile application that lets users post listings of the surplus food they have, which would other be thrown away, so that it can be taken away by someone in need. 
 
@@ -14,7 +14,7 @@ FoodEx is a mobile application that lets users post listings of the surplus food
 
 ## Meta
 
-Jishnu Pradeep – [@jishnupradeep](https://twitter.com/jishnupradeep) – jishnupradeep@gmail.com
+Jishnu Pradeep – [@jishnupradeep](https://twitter.com/jishnupradeep)
 Shivangi Chaudury
 
 [https://github.com/jishnupradeep/FoodExApp](https://github.com/jishnupradeep/)
