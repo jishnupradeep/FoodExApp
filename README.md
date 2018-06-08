@@ -8,9 +8,9 @@ FoodEx is a mobile application that lets users post listings of the surplus food
 </p>
 
 ## Live Demo
-```
+
  [Click here](https://jishnupradeep.github.io/FoodExApp/) to take a look into our UI Design
-```
+
 
 ## Meta
 
