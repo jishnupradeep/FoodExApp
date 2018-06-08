@@ -15,6 +15,7 @@ FoodEx is a mobile application that lets users post listings of the surplus food
 ## Meta
 
 Jishnu Pradeep – [@jishnupradeep](https://twitter.com/jishnupradeep)
-Shivangi Chaudury
+
+Shivangi Chaudhri 
 
 [https://github.com/jishnupradeep/FoodExApp](https://github.com/jishnupradeep/)
